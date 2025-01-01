@@ -262,8 +262,8 @@ WORKDIR /app
 COPY --from=build /build/main ./
 
 ## copy runtime assets which may or may not exist
-COPY --from=build /build/Rocket.tom[l] ./static
-COPY --from=build /build/stati[c] ./static
+COPY --from=build /build/Rocket.tom[l] ./
+COPY --from=build /build/stati[c] ./static/
 COPY --from=build /build/template[s] ./templates
 
 ## ensure the container listens globally on port 8080
